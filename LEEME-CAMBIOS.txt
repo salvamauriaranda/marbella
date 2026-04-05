@@ -1,0 +1,17 @@
+Cambios incluidos en esta primera pasada segura:
+
+1) Se han sacado las imágenes embebidas base64 del HTML y se han movido a /assets/embedded/
+   - Esto reduce muchísimo el peso de los HTML.
+   - La home pasa de ~8 MB a ~74 KB de HTML.
+
+2) Se ha corregido la doble barra en URLs schema tipo https://www.tupisoenmarbella.es//
+
+3) Se han suavizado unos pocos textos muy forzados, sin rehacer el contenido.
+
+4) No se ha cambiado todavía el dominio placeholder tupisoenmarbella.es
+   - Haz este cambio cuando confirmes el dominio final publicado.
+   - Afecta a canonical, og:url, schema, sitemap.xml y robots.txt.
+
+Siguiente paso recomendado:
+- Sustituir tupisoenmarbella.es por tu dominio final en todos los archivos.
+- Verificar en Netlify que /assets/embedded/ se sirve correctamente.
